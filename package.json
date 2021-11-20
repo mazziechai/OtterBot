@@ -1,0 +1,29 @@
+{
+    "name": "otterbot",
+    "type": "commonjs",
+    "version": "0.1.0",
+    "description": "A fully featured RPG bot for all your RPG needs.",
+    "main": "src/index.js",
+    "repository": "https://github.com/mazziechai/OtterBot",
+    "author": "mazziechai",
+    "license": "AGPL-3.0-or-later",
+    "scripts": {
+        "start": "node ./src/index.js",
+        "dev": "node ./src/index.js | pino-pretty",
+        "lint": "eslint --ext .js,.ts src",
+        "lint:fix": "eslint --ext .js,.ts src --fix"
+    },
+    "devDependencies": {
+        "eslint": "^8.2.0",
+        "eslint-config-prettier": "^8.3.0",
+        "pino-pretty": "^7.2.0",
+        "prettier": "^2.4.1"
+    },
+    "dependencies": {
+        "@discordjs/builders": "^0.8.2",
+        "@discordjs/rest": "^0.1.0-canary.0",
+        "discord-api-types": "^0.24.0",
+        "discord.js": "^13.3.1",
+        "pino": "^7.3.0"
+    }
+}
