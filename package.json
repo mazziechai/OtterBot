@@ -11,11 +11,11 @@
         "start": "node ./src/index.js",
         "dev": "node ./src/index.js | pino-pretty",
         "lint": "eslint --ext .js,.ts src",
-        "lint:fix": "eslint --ext .js,.ts src --fix"
+        "lint:fix": "eslint --ext .js,.ts src --fix",
+        "format": "prettier --write src/**/*.js"
     },
     "devDependencies": {
         "eslint": "^8.2.0",
-        "eslint-config-prettier": "^8.3.0",
         "pino-pretty": "^7.2.0",
         "prettier": "^2.4.1"
     },
